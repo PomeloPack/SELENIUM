@@ -22,6 +22,7 @@ driver.find_element(By.CSS_SELECTOR, "input[name='name']").send_keys("Martin")
 driver.find_element(By.CSS_SELECTOR, "#inlineRadio2").click()
 driver.find_element(By.XPATH, "(//input[@type='text'])[3]").send_keys(" ")
 driver.find_element(By.XPATH, "(//input[@type='text'])[3]").clear() # to clear the window
+driver.find_element(By.XPATH, "(//input[@type='date'])").send_keys("27.04.1995")
 
 
 # XPATH tagname[@attribute = "value"] -> //input[@type = "submit"]
