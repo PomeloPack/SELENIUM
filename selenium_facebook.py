@@ -15,7 +15,7 @@ import time
 # This means that for as long as the condition returns a falsy value, it will keep trying and waiting. 
 # Thus Explicit waits allows us to wait for a condition to occur which inturn synchronises the state between the browser and its DOM Tree, and the WebDriver script.
 
-service_obj = Service(r"D:\UDEMY_SELENIUM\Python_selenium\msedgedriver.exe")
+service_obj = Service("geckodriver")
 driver = webdriver.Edge(service = service_obj)
 wait = WebDriverWait(driver, 5) # waiting for definition time and after that open the driver
 
